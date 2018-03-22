@@ -1,0 +1,101 @@
+Resources
+A resource is a statement of configuration policy.
+It describes the desired state of an element of
+your infrastructure and the steps needed to bring
+that item to the desired state.
+
+file '/hello.txt' do
+        content 'Hello IntelliQ'
+end
+
+ sudo chef-client –-local-mode hello.rb
+package 'httpd' do
+ action :install
+end
+
+chef-client
+chef-client is an agent that runs locally on every
+node that is under management by Chef.
+When a chef-client is run, it will perform all of the
+steps that are required to bring the node into the
+expected state.
+
+
+file 'hello.txt' do
+ content 'Hello, world!'
+ mode '0644'
+ owner 'root'
+ group 'root'
+ action :create
+end
+
+
+package 'tree' do
+ action :install
+end
+package 'ntp' do
+ action :install
+end
+file '/etc/motd' do
+ content 'Property of ...'
+ owner ‘root’
+ group 'root'
+end
+
+What is 'chef'?
+An executable program that allows you generate
+cookbooks and cookbook components.
+
+chef --help
+
+ chef generate cookbook cookbooks/workstation
+
+ tree cookbooks/workstation
+
+README.md
+The description of the cookbook's features written
+in Markdown.
+
+
+metadata.rb
+Every cookbook requires a small amount of
+metadata. Metadata is stored in a file called
+metadata.rb that lives at the top of each
+cookbook’s directory.
+
+ Let's Take a Look at the Metadata
+name 'workstation'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures workstation'
+long_description 'Installs/Configures workstation'
+version '0.1.0'
+$ cat cookbooks/workstation/metadata.rb
+
+
+ mv setup.rb cookbooks/workstation/recipes
+
+ Verify the Cookbook has the Recipe
+$ tree cookbooks/workstation
+
+~/setup.rb
+
+package 'tree' do
+ action :install
+end
+package 'git' do
+ action :install
+end
+file '/etc/motd' do
+ content 'Property of ...'
+end
+
+sudo chef-client --local-mode setup.rb
+
+cd cookbooks/workstation
+gt init
+git add .
+git commit -m 'msg'
+
+~

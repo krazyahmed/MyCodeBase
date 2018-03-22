@@ -1,0 +1,174 @@
+Git Branching
+==============
+This is a feature available in Git using which we can create multiple 
+branches to work on different functionalites of the same project
+By default Git performs all its activites on the master branch.
+
+To see the list of avaliable branches
+git branch
+
+To create a new branch
+git branch branch_name
+
+To move into a branch
+git checkout branch_name
+
+To merge a branch 
+git merge branch_name
+
+Downloading from git remote repository
+This can be using 3 git commands
+1 git clone
+2 git fetch
+3 git pull
+
+git clone will download the complete remote
+repository irrespectice of whether it is already 
+present on our machine or not.It also initilises an 
+empty folder as a git repository ie it create
+a hidden folder called .git
+
+ git clone remo_repositry_url
+
+git fetch will download only the changes or modifications
+in the rmeote repository which are not present on
+the local repository.These changes will be store on 
+a remote branch.We can switch into this branch verify those
+changes and then merge them with the master branch
+
+Steps
+1 Open git.com
+2 go to any repository and modfiy some files
+3 commit them in the rmeote repository
+4 open git bash and give the below command
+  git fetch
+5 A remote branch will be created where the changes
+  will be saved
+  git branch -a
+  The above command will show the list of all branches
+6 Switch to the new remote branch
+  git chekout remote_branchname
+7 View the changes.These changes will not be in the 
+  master branch
+8 To merge them with the master branch
+9 checkout into the master branch
+  git checkout master
+10 git merge remote_branchname
+
+git pull will download the changes and automatically 
+merge with the master branch
+Steps
+1 Open github.com and make some changes
+2 open git bash and give the below command
+  git pull
+3 we will see thaty the changes are automatically
+  reflected in the master branch 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
