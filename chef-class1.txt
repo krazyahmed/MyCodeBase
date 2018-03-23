@@ -1,5 +1,7 @@
+
 Resources
-A resource is a statement of configuration policy.
+A resource is a statement of conf
+iguration policy.
 It describes the desired state of an element of
 your infrastructure and the steps needed to bring
 that item to the desired state.
