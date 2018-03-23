@@ -1,3 +1,6 @@
+
+//changes changes and more changes
+
 Resources
 A resource is a statement of configuration policy.
 It describes the desired state of an element of
