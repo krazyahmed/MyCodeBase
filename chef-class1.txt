@@ -1,4 +1,9 @@
 
+<<<<<<< HEAD
+=======
+//changes changes and more changes
+
+>>>>>>> test
 Resources
 A resource is a statement of conf
 iguration policy.
